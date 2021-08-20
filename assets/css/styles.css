@@ -27,9 +27,6 @@ body{
         bottom 00px right -100px;
     background-repeat: no-repeat;
     background-size: 1000px;
-
-    
-
 }
 section{
     margin: 200px 0;
@@ -65,6 +62,7 @@ section{
     margin: -20px 0 10px;
 }
 .name-age span{
+    font-size: 20px;
     color: var(--Dark-grayish-blue);
     font-weight: 400;
 }
@@ -95,8 +93,26 @@ hr{
     letter-spacing: 0.8px;
 }
 
-
+@media screen and (max-width: 1440px) {
+    body{  
+        background-position:
+            top -500px left -300px,
+            bottom -300px right -300px;  
+    }
+}
+@media screen and (max-width: 768px) {
+    body{  
+        background-position:
+            top -1000px left -1000px
+            bottom -500px right -1000px;  
+    }
+}
 @media screen and (max-width: 375px) {
+    body{  
+        background-position:
+        top -400px left -100px,
+        bottom 00px right -100px;  
+    }
     section{
         margin: 50px 0;
     }
